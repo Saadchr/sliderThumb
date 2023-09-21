@@ -133,7 +133,6 @@ const NavigationMenuDemo = () => {
   );
 };
 
-// trunk-ignore(eslint/react/display-name)
 const ListItem = React.forwardRef(
   ({ className, children, title, ...props }, forwardedRef) => (
     <li>
@@ -155,5 +154,7 @@ const ListItem = React.forwardRef(
     </li>
   )
 );
+
+ListItem.displayName = "ListItem";
 
 export default NavigationMenuDemo;
